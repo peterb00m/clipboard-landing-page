@@ -129,6 +129,7 @@ h3 {
   align-items: center;
   margin-top: 150px;
   margin-bottom: 100px;
+  gap: 20px;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -371,5 +372,57 @@ h3 {
 
   .images4 img {
     width: 70px;
+  }
+}
+@media (orientation: landscape), (min-width: 1024px) {
+  .image3 {
+    margin-top: 60px;
+  }
+
+  .image3 img {
+    width: 70%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+  }
+}
+@media (max-height: 500px) and (orientation: landscape) {
+  .image3 {
+    margin-top: 30px;
+  }
+
+  .image3 img {
+    width: 60%;
+    max-width: 450px;
+  }
+}
+/* Center footer text and links on mobile */
+@media (max-width: 480px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .footer-links .link-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+
+  .attribution {
+    text-align: center;
   }
 }
